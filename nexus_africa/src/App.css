@@ -36,3 +36,298 @@
     transform: rotate(360deg);
   }
 }
+
+/* these are new styles will merge them later with the rest */
+/* General Styles */
+body {
+  background-color: #0a0a0a;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  z-index: 1000;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  color: #ff8c42;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #1a1a1a, #333);
+  padding: 100px 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  margin-top: 80px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.cta-buttons button {
+  padding: 14px 22px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+.primary {
+  background: linear-gradient(to right, #ff6b35, #ff8c42);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(255, 107, 53, 0.4);
+}
+
+.secondary {
+  background: transparent;
+  border: 2px solid #ff8c42;
+  color: #ff8c42;
+}
+
+/* Button Hover Effects */
+.primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 140, 66, 0.5);
+}
+
+.secondary:hover {
+  background: rgba(255, 140, 66, 0.2);
+  transform: scale(1.05);
+}
+
+/* About Section */
+.about-section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* How It Works */
+.how-it-works {
+  padding: 80px 20px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.step {
+  background: linear-gradient(to right, #222, #444);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.step:hover {
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+  padding: 80px 20px;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: linear-gradient(to right, #222, #444);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #ff6b35, #ff8c42);
+}
+
+/* Pricing Section */
+.pricing {
+  padding: 80px 20px;
+}
+
+.pricing-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.price-card {
+  background: linear-gradient(to right, #222, #333);
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.price-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+}
+
+/* FAQ */
+.faq {
+  padding: 80px 20px;
+}
+
+.faq-item {
+  background: #222;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  margin: 10px auto;
+  text-align: left;
+}
+
+/* Contact Form */
+.contact {
+  padding: 80px 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact input,
+.contact textarea {
+  width: 80%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact button {
+  padding: 14px 22px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #ff6b35;
+  color: white;
+  border: none;
+}
+
+/* CTA */
+.cta {
+  padding: 80px 20px;
+  background: linear-gradient(to right, #222, #333);
+}
+
+.cta button {
+  padding: 14px 22px;
+  background: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Blog */
+.blog {
+  padding: 80px 20px;
+}
+
+.blog-post {
+  background: #222;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.blog-post a {
+  color: #ff8c42;
+  text-decoration: none;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(to right, #111, #222);
+  padding: 30px;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+.social-links a {
+  color: #ff6b35;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  color: #ff8c42;
+  text-shadow: 0 0 10px rgba(255, 140, 66, 0.8);
+}
