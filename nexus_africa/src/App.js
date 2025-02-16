@@ -12,6 +12,7 @@ import CTA from "./components/CTA";
 import Blog from "./components/Blog";
 import "./App.css";
 
+
 function App() {
   return (
     <div className="App">

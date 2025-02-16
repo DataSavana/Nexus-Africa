@@ -1,9 +1,10 @@
 import React from "react";
+import "../styles/Navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1 className="logo">Nexus Africa</h1>
+      <h1 className="shimmer-text">Nexus Africa</h1>
       <ul className="nav-links">
         <li>
           <a href="#about">About</a>
