@@ -360,3 +360,120 @@ body {
   color: #ff8c42;
   text-shadow: 0 0 10px rgba(255, 140, 66, 0.8);
 }
+
+/* for the DataPipeline.css */
+
+/* 🔹 Pipeline Container */
+/* 🔹 Pipeline Container */
+
+/* 🔹 Title Styling */
+.pipeline-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Pipeline Layout */
+.pipeline-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px; /* Increased spacing */
+  flex-wrap: nowrap;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+/* Sections */
+.section {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 200px;
+  max-width: 250px;
+}
+
+/* Adjust Source Section */
+#sources {
+  height: 400px;
+  min-width: 80px;
+  max-width: 120px;
+  margin-right: 150px; /* More spacing from Processing */
+}
+
+/* Source Items */
+#source-item {
+  max-width: 90px;
+  margin-bottom: 25px;
+}
+
+/* Section Titles */
+.section h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* Box Items */
+.source-item,
+.processing-step,
+.storage-step,
+.access-method {
+  padding: 10px;
+  border-radius: 5px;
+  background: #222;
+  margin: 8px 0;
+  transition: transform 0.3s ease-in-out;
+  font-size: 14px;
+}
+
+/* Hover Effects */
+.source-item:hover,
+.processing-step:hover,
+.storage-step:hover,
+.access-method:hover {
+  transform: scale(1.05);
+  background: #ff6b35;
+  color: white;
+}
+
+/* ARROW STYLES */
+.arrow {
+  position: absolute;
+  width: 100px;
+  height: 10px;
+}
+
+.arrow svg {
+  width: 100%;
+  height: 100%;
+}
+
+.arrow-line {
+  stroke: white;
+  stroke-width: 2;
+  fill: none;
+}
+
+.arrow-head {
+  fill: white;
+}
+
+/* Positioning Arrows */
+#arrow-source-processing {
+  left: 17%;
+  top: 45%;
+}
+
+#arrow-processing-storage {
+  left: 43%;
+  top: 45%;
+}
+
+#arrow-storage-access {
+  left: 75%;
+  top: 45%;
+}

@@ -1,0 +1,18 @@
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #1a1a1a, #333);
+  padding: 100px 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  margin-top: 80px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
