@@ -402,7 +402,7 @@ body {
   height: 400px;
   min-width: 80px;
   max-width: 120px;
-  margin-right: 150px; /* More spacing from Processing */
+  /* margin-right: 50px; More spacing from Processing */
 }
 
 /* Source Items */
@@ -435,15 +435,15 @@ body {
 .processing-step:hover,
 .storage-step:hover,
 .access-method:hover {
-  transform: scale(1.05);
-  background: #ff6b35;
+  transform: scale(2);
   color: white;
+  cursor: pointer;
 }
 
 /* ARROW STYLES */
 .arrow {
   position: absolute;
-  width: 100px;
+  width: 60px;
   height: 10px;
 }
 
@@ -464,16 +464,16 @@ body {
 
 /* Positioning Arrows */
 #arrow-source-processing {
-  left: 17%;
+  left: 21%;
   top: 45%;
 }
 
 #arrow-processing-storage {
-  left: 43%;
+  left: 45%;
   top: 45%;
 }
 
 #arrow-storage-access {
-  left: 75%;
+  left: 69%;
   top: 45%;
 }

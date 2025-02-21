@@ -1,4 +1,5 @@
 import React from "react";
+import AuthButton from "./AuthButton";
 
 const CTA = () => {
   return (
@@ -7,7 +8,7 @@ const CTA = () => {
       <p>
         Join us in making AI more inclusive with high-quality African datasets.
       </p>
-      <button className="primary">Sign Up</button>
+      <AuthButton className="primary" text="Sign Up" />
     </div>
   );
 };
