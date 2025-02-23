@@ -10,6 +10,8 @@ import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import CTA from "./components/CTA";
 import Blog from "./components/Blog";
+import DataPipeline from "./components/DataPipeline";
+import WhyAfricanData from "./components/WhyAfricanData";
 import "./App.css";
 
 
@@ -21,7 +23,9 @@ function App() {
       <About />
       <HowItWorks />
       <Features />
-      <Pricing />
+      <DataPipeline />
+      <WhyAfricanData />
+      {/* <Pricing /> */}
       <FAQ />
       <Contact />
       <CTA />
