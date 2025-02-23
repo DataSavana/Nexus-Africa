@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/HeroSection.css";
+import AuthButton from "./AuthButton";
 
 const HeroSection = () => {
   return (
@@ -10,7 +11,7 @@ const HeroSection = () => {
         researchers.
       </p>
       <div className="cta-buttons">
-        <button className="primary">Get Started</button>
+        <AuthButton text="Get Started" />
         <button className="secondary">Book a Demo</button>
       </div>
     </div>

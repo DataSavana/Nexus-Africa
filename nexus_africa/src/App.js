@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect, useState } from "react";
+import { auth } from "./firebaseConfig";
 import HeroSection from "./components/HeroSection";
 import Features from "./components/Features";
 import Pricing from "./components/Pricing";
@@ -16,6 +18,13 @@ import "./App.css";
 
 
 function App() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      setUser(user);
+    });
+  }, []);
   return (
     <div className="App">
       <Navbar />
@@ -28,7 +37,7 @@ function App() {
       {/* <Pricing /> */}
       <FAQ />
       <Contact />
-      <CTA />
+      {user ? null : <CTA />}
       <Blog />
       <Footer />
     </div>
