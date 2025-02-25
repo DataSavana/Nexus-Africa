@@ -5,7 +5,7 @@ import HeroSection from "./components/HeroSection";
 import Features from "./components/Features";
 import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import { Navbar } from './components/Navbar';
 import About from "./components/About";
 import HowItWorks from "./components/HowItWorks";
 import FAQ from "./components/FAQ";
