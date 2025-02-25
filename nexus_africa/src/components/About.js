@@ -44,6 +44,7 @@ const About = () => {
     setTimeout(() => setIsAnimating(false), 500);
   };
 
+
   return (
     <div id="about" className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-6xl mx-auto px-4 py-16">
@@ -62,8 +63,7 @@ const About = () => {
           </h3>
 
           <div className="relative overflow-hidden">
-            <div className={`transform transition-transform duration-500 ease-in-out ${isAnimating ? (direction === 'right' ? '-translate-x-full' : 'translate-x-full') : 'translate-x-0'
-              }`}>
+            <div className={`transform transition-transform duration-500 ease-in-out ${isAnimating ? (direction === 'right' ? '-translate-x-full' : 'translate-x-full') : 'translate-x-0'}`}>
               {/* Chat-like interface */}
               <div className="space-y-6 p-4 bg-gray-50 rounded-lg">
                 {/* User prompt */}

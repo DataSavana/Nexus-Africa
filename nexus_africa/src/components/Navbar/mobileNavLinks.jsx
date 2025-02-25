@@ -5,54 +5,54 @@ import {useState} from "react";
 import { Accessibility } from "./accessibility";
 
 const NavLinksContainer = styled.div`
-height: 100%;
-width: 100%;
-display: flex;
-align-items: top;
-justify-content: center;
-background-color:black;
-`;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    background-color:black;
+    `;
 
 const LinksWrapper = styled.ul`
-margin: 0;
-padding:0;
-display:flex;
-height: 50%;
-list-style: none;
-justify-content:center;
-background-color: black;
-width: 100%;
-flex-direction: column;
-position:fixed;
-top:65px;
-left: 0;
-`;
+    margin: 0;
+    padding:0;
+    display:flex;
+    height: 50%;
+    list-style: none;
+    justify-content:center;
+    background-color: black;
+    width: 100%;
+    flex-direction: column;
+    position:fixed;
+    top:65px;
+    left: 0;
+    `;
 
 const LinkItem = styled.li`
-width: 100%;
-padding: 0 1.1em;
-color: white;
-display: flex;
-font-weight: 500;
-font-size: 14px;
-border-top: 2px solid transparent;
-transition: all 200ms ease-in-out;
+    width: 100%;
+    padding: 0 1.1em;
+    color: white;
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    border-top: 2px solid transparent;
+    transition: all 200ms ease-in-out;
 
 
-&:hover{
-    border-top: 2px solid green;
-}
-`;
+    &:hover{
+        border-top: 2px solid green;
+    }
+    `;
 
 const Link = styled.a`
-text-decoration: none;
-color: inherit;
-font-size: inherit;
-`;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    `;
 
 const Marginer = styled.div`
-height: 1em;
-`;
+    height: 1em;
+    `;
 
 export function MobileNavLinks(props) {
 const [isOpen, setOpen] = useState(false);
