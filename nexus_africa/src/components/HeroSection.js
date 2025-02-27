@@ -2,6 +2,10 @@ import React from "react";
 import "./styles/HeroSection.css";
 import AuthButton from "./AuthButton";
 
+function scrollToContact(id) {
+  document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+}
+
 const HeroSection = () => {
   return (
     <div className="hero">
@@ -12,7 +16,12 @@ const HeroSection = () => {
       </p>
       <div className="cta-buttons">
         <AuthButton text="Get Started" />
-        <button className="secondary">Book a Demo</button>
+        <button
+          onClick={() => scrollToContact("contact")}
+          className="secondary"
+        >
+          Book a Demo
+        </button>
       </div>
     </div>
   );
