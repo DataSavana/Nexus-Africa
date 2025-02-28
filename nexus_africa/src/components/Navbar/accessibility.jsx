@@ -5,7 +5,7 @@ const AccessibilityContainer = styled.div`
 display: flex;
 `;
 
-const RegisterButton = styled.button`
+const GetStartedButton = styled.button`
 border: 0;
 outline: 0;
 padding: 8px 1em;
@@ -27,7 +27,7 @@ margin-right: 7px;
 }
 `;
 
-const LoginButton = styled.button`
+const BookDemoButton = styled.button`
 border: 0;
 outline: 0;
 padding: 8px 1em;
@@ -54,8 +54,8 @@ margin-right: 7px;
 
 export function Accessibility(props) {
     return (<AccessibilityContainer>
-        <RegisterButton>Register</RegisterButton>
-        <LoginButton>Login</LoginButton>
+        <GetStartedButton>Get Started</GetStartedButton>
+        <BookDemoButton>Book a Demo</BookDemoButton>
     </AccessibilityContainer>
     );
 }

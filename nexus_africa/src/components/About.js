@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Bot, User } from 'lucide-react';
 
 const About = () => {
   return (
