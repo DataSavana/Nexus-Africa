@@ -17,9 +17,10 @@ const LinksWrapper = styled.ul`
 margin: 0;
 padding:0;
 display:flex;
-height: 50%;
+height: 30%;
 list-style: none;
 justify-content:center;
+align-items: center;
 background-color: black;
 width: 100%;
 flex-direction: column;
@@ -33,8 +34,10 @@ width: 100%;
 padding: 0 1.1em;
 color: white;
 display: flex;
+flex-direction:column;
+justify-content: center;
 font-weight: 500;
-font-size: 14px;
+font-size: 16px;
 border-top: 2px solid transparent;
 transition: all 200ms ease-in-out;
 
