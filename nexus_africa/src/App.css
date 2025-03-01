@@ -479,7 +479,7 @@ body {
 }
 
 /* 📱 🔹 Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .pipeline-flow {
     flex-direction: column;
     align-items: center;
@@ -494,15 +494,38 @@ body {
 
   /* 🔹 Adjust Arrow Direction (Pointing Downward) */
   .arrow {
-    width: 10px;
-    height: 50px;
+    width: 50%; /* Default arrow width relative to screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
+  .arrow svg {
+    transform: rotate(90deg);
+    /* width: 100%;  */
+  }
+
+  /* 🔹 Make arrow width responsive */
+  @media (max-width: 768px) {
+    .arrow {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .arrow {
+      width: 80%;
+      height: 30px;
+    }
+  }
+
+  /* 🔹 Adjust arrow placement */
   #arrow-source-processing,
   #arrow-processing-storage,
   #arrow-storage-access {
-    left: 50%;
+    left: auto;
     top: auto;
-    transform: rotate(90deg);
+    margin: 20px 0;
+    position: relative;
   }
 }
