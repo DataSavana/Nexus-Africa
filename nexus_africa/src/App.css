@@ -124,7 +124,7 @@ body {
   padding: 100px 20px;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .hero h1 {
@@ -379,7 +379,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px; /* Increased spacing */
+  gap: 100px;
   flex-wrap: nowrap;
   max-width: 100%;
   overflow-x: hidden;
@@ -476,4 +476,33 @@ body {
 #arrow-storage-access {
   left: 69%;
   top: 45%;
+}
+
+/* 📱 🔹 Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .pipeline-flow {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .section {
+    min-width: 250px;
+    max-width: 300px;
+    width: 80%;
+  }
+
+  /* 🔹 Adjust Arrow Direction (Pointing Downward) */
+  .arrow {
+    width: 10px;
+    height: 50px;
+  }
+
+  #arrow-source-processing,
+  #arrow-processing-storage,
+  #arrow-storage-access {
+    left: 50%;
+    top: auto;
+    transform: rotate(90deg);
+  }
 }

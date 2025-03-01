@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import { auth, provider, signInWithPopup, signOut } from "../firebaseConfig";
+import { useNavigate } from "react-router-dom";
 
 const AuthButton = ({ text }) => {
   const [user, setUser] = useState(null);
+  const navigate = useNavigate(); // Hook for navigation
 
   const handleLogin = async () => {
     try {
       const result = await signInWithPopup(auth, provider);
       setUser(result.user);
+      navigate("/dashboard");
     } catch (error) {
       console.error("Error signing in:", error);
     }
@@ -16,6 +19,7 @@ const AuthButton = ({ text }) => {
   const handleLogout = async () => {
     await signOut(auth);
     setUser(null);
+    navigate("/");
   };
 
   return (

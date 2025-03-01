@@ -1,0 +1,47 @@
+/* About Section Styles */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0f0f; /* Match the dark theme */
+  padding: 80px 20px; /* Increased padding for better spacing */
+}
+
+.about-content {
+  background-color: #1a1a1a; /* Dark background for contrast */
+  padding: 40px;
+  max-width: 900px;
+  border-radius: 12px; /* Smooth rounded corners */
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1); /* Subtle glowing shadow */
+  text-align: center;
+}
+
+.about-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.about-text {
+  font-size: 18px;
+  color: #cccccc;
+  line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    padding: 30px;
+    max-width: 90%;
+  }
+
+  .about-title {
+    font-size: 24px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+}
