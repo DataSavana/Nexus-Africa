@@ -514,8 +514,8 @@ body {
 
   @media (max-width: 480px) {
     .arrow {
-      width: 80%;
-      height: 30px;
+      width: 50%;
+      height: 20px;
     }
   }
 
