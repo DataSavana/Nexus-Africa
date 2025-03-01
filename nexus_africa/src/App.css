@@ -492,9 +492,24 @@ body {
     width: 80%;
   }
 
-  /* 🔹 Adjust Arrow Direction (Pointing Downward) */
+  #sources {
+    height: 50px;
+    min-width: 200px;
+    max-width: 400px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  #sources h2 {
+    display: none;
+  }
+  .source-item {
+    max-width: 95px;
+    margin-top: auto;
+  }
+
   .arrow {
-    width: 50%; /* Default arrow width relative to screen */
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -502,7 +517,6 @@ body {
 
   .arrow svg {
     transform: rotate(90deg);
-    /* width: 100%;  */
   }
 
   /* 🔹 Make arrow width responsive */
