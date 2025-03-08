@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-import React, { useState } from 'react';
+import React from 'react'; //{ useState } 
 import "./styles/About.css"; // Import the updated CSS file
 // import React, { useState } from "react";
 
@@ -76,18 +75,18 @@ const About = () => {
           , making AI more inclusive and globally representative.
         </p>
 
-        <div className="relative max-w-4xl mx-auto rounded-xl p-8 bg-white shadow-2xl">
+        {/* <div className="relative max-w-4xl mx-auto rounded-xl p-8 bg-white shadow-2xl">
           <h3 className="text-2xl font-semibold mb-8 text-center text-gray-800">
             Our Why?
           </h3>
 
           <div className="relative overflow-hidden">
             <div className={`transform transition-transform duration-500 ease-in-out ${isAnimating ? (direction === 'right' ? '-translate-x-full' : 'translate-x-full') : 'translate-x-0'
-              }`}>
-              {/* Chat-like interface */}
-              <div className="space-y-6 p-4 bg-gray-50 rounded-lg">
-                {/* User prompt */}
-                <div className="flex items-start space-x-3">
+              }`}> */}
+        {/* Chat-like interface */}
+        {/* <div className="space-y-6 p-4 bg-gray-50 rounded-lg"> */}
+        {/* User prompt */}
+        {/* <div className="flex items-start space-x-3">
                   <div className="flex-shrink-0">
                     <User className="w-8 h-8 text-blue-600" />
                   </div>
@@ -96,10 +95,10 @@ const About = () => {
                       {examples[currentIndex].prompt}
                     </div>
                   </div>
-                </div>
+                </div> */}
 
-                {/* AI Response */}
-                <div className="flex items-start space-x-3">
+        {/* AI Response */}
+        {/* <div className="flex items-start space-x-3">
                   <div className="flex-shrink-0">
                     <Bot className="w-8 h-8 text-purple-600" />
                   </div>
@@ -115,10 +114,10 @@ const About = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            {/* Navigation Buttons with hover effects */}
-            <button
+        {/* Navigation Buttons with hover effects */}
+        {/* <button
               onClick={prevSlide}
               className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 bg-white p-3 rounded-full shadow-lg hover:bg-gray-50 transform transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
@@ -129,10 +128,10 @@ const About = () => {
               className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 bg-white p-3 rounded-full shadow-lg hover:bg-gray-50 transform transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <ChevronRight className="w-6 h-6 text-blue-600" />
-            </button>
+            </button> */}
 
-            {/* Enhanced pagination dots */}
-            <div className="flex justify-center space-x-2 mt-8">
+        {/* Enhanced pagination dots */}
+        {/* <div className="flex justify-center space-x-2 mt-8">
               {examples.map((_, index) => (
                 <button
                   key={index}
@@ -148,7 +147,7 @@ const About = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
