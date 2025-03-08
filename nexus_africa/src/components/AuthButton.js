@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { auth, provider, signInWithPopup, signOut } from "../firebaseConfig";
 import { useNavigate } from "react-router-dom";
+import GetStartedButton from "./Navbar/accessibility";
 
 const AuthButton = ({ text }) => {
   const [user, setUser] = useState(null);
   const navigate = useNavigate(); // Hook for navigation
+
 
   const handleLogin = async () => {
     try {
@@ -33,9 +35,9 @@ const AuthButton = ({ text }) => {
           </button>
         </div>
       ) : (
-        <button className="primary" onClick={handleLogin}>
+        <GetStartedButton className="primary" onClick={handleLogin}>
           {text}
-        </button>
+        </GetStartedButton>
       )}
     </div>
   );

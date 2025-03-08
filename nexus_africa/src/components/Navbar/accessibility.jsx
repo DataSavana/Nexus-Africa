@@ -1,6 +1,10 @@
 import React from "react";
 import styled from 'styled-components';
+import AuthButton from '../AuthButton.js'
 
+function scrollToContact(id) {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" })
+}
 const AccessibilityContainer = styled.div`
 display: flex;
 `;
@@ -50,12 +54,16 @@ margin-right: 7px;
 }
 `;
 
-
-
 export function Accessibility(props) {
     return (<AccessibilityContainer>
-        <GetStartedButton>Get Started</GetStartedButton>
-        <BookDemoButton>Book a Demo</BookDemoButton>
+        <AuthButton text = "Get Started" />
+        <BookDemoButton
+            onClick={() => scrollToContact("contact")}
+            class = "BookDemoButton"
+            >
+            Book a Demo
+            </BookDemoButton>
     </AccessibilityContainer>
     );
 }
+export default GetStartedButton;
