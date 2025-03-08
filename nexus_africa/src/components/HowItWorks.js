@@ -15,7 +15,7 @@ const HowItWorks = () => {
         </div>
         <div className="step">
           <h3>💻 AI Integration</h3>
-          <p>AI companies access our datasets via API or direct download.</p>
+          <p>AI companies, Universities, etc, access our datasets our API</p>
         </div>
       </div>
     </div>

@@ -124,7 +124,7 @@ body {
   padding: 100px 20px;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .hero h1 {
@@ -379,7 +379,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px; /* Increased spacing */
+  gap: 100px;
   flex-wrap: nowrap;
   max-width: 100%;
   overflow-x: hidden;
@@ -476,4 +476,70 @@ body {
 #arrow-storage-access {
   left: 69%;
   top: 45%;
+}
+
+/* 📱 🔹 Responsive Design for Smaller Screens */
+@media (max-width: 1024px) {
+  .pipeline-flow {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .section {
+    min-width: 250px;
+    max-width: 300px;
+    width: 80%;
+  }
+
+  #sources {
+    height: 50px;
+    min-width: 200px;
+    max-width: 400px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  #sources h2 {
+    display: none;
+  }
+  .source-item {
+    max-width: 95px;
+    margin-top: auto;
+  }
+
+  .arrow {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arrow svg {
+    transform: rotate(90deg);
+  }
+
+  /* 🔹 Make arrow width responsive */
+  @media (max-width: 768px) {
+    .arrow {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .arrow {
+      width: 50%;
+      height: 11px;
+    }
+  }
+
+  /* 🔹 Adjust arrow placement */
+  #arrow-source-processing,
+  #arrow-processing-storage,
+  #arrow-storage-access {
+    left: auto;
+    top: auto;
+    margin: 20px 0;
+    position: relative;
+  }
 }

@@ -35,7 +35,7 @@ const WhyAfricanData = () => {
   ];
 
   return (
-    <div className="african-data-section">
+    <div id="our-why" className="african-data-section">
       <h2>Why African Data Matters</h2>
       <p>
         AI models trained on predominantly Western data fail to understand
